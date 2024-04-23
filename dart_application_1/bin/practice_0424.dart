@@ -1,7 +1,7 @@
 void main() {
   question1();
 }
-
+//排除轉換清單
 List<String> exclude = ["AI"];
 String splitToken = " ";
 
@@ -13,6 +13,7 @@ void question1() {
 
   List<String> listRes = [];
 
+  //轉換邏輯 第1個字母大寫 其餘轉小寫
   parse1(String input) {
     if (exclude.contains(input)) {
       return input;
