@@ -2,7 +2,6 @@ void main() {
   question1();
 }
 
-
 List<String> exclude = ["AI"];
 String splitToken = " ";
 
@@ -13,17 +12,19 @@ void question1() {
   List<String> list = a.split(splitToken);
 
   List<String> listRes = [];
-  for (var i = 0; i < list.length; i++) {
-    listRes.add(parse(list[i]));
-  }
-  print(listRes.join(splitToken));
-}
 
-String parse(String input) {
-  if (exclude.contains(input)) {
-    return input;
-  } else {
-    input = input.toLowerCase();
-    return "${input.substring(0, 1).toUpperCase()}${input.substring(1, input.length)}";
+  parse1(String input) {
+    if (exclude.contains(input)) {
+      return input;
+    } else {
+      input = input.toLowerCase();
+      return "${input.substring(0, 1).toUpperCase()}${input.substring(1, input.length)}";
+    }
   }
+
+  for (var i = 0; i < list.length; i++) {
+    listRes.add(parse1(list[i]));
+  }
+
+  print(listRes.join(splitToken));
 }
