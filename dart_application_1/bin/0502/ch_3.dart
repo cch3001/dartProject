@@ -1,4 +1,5 @@
 void main(List<String> args) {
+  /** 
   print(myWidget.timeStamp!());
   print(myWidget2.timeStamp!());
 
@@ -19,6 +20,8 @@ void main(List<String> args) {
 
   test();
   print('a $a');
+
+  */
 
   // for(int i=0; i< 10;i++){
   //   print(i);
