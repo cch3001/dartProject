@@ -34,7 +34,7 @@ class Hero with Flying,SuperPower{
     void superPower1(){
     print("I don't super power") ;
   }
-    void superPower1(int a){
+    void superPower2(int a){
     print("I don't super power") ;
   }
 
