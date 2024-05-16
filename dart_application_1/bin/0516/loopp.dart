@@ -46,5 +46,54 @@ void main(List<String> args){
 
   print('l2: $l2') ;
 
+  //初始值 ; while(條件判斷){動作;間隔}
+  var num = 5 ;
+  factorial = 1 ;
+  //階層運算
+  while(num >= 1){
+    factorial *= num ;
+    num -- ;
+  }
+  print('factorial: $factorial') ;
+
+  
+
+  num = 5 ;
+  factorial = 1 ;
+  
+  num = 5 ;
+  factorial = 1 ;
+  do {
+    factorial *= num ;
+    num -- ;
+  } while (num >= 1);
+
+  print('factorial: $factorial') ;
+
+  //初始值;do{動作;間隔}while(條件判斷)
+  //情境: 至少動作被執行1次
+  var n1 = 8 ;
+  do{ //條件不成立 會先執行後判斷 只執行1次
+    print("do while n1: $n1") ;
+    n-- ;
+  }while(n1>10) ;
+
+  n1 = 8 ;
+  while(n1>10) {//先判斷條件是否成立 條件不合 就不執行
+    print("while   n1: $n1") ;
+    n-- ;
+  }
+
+  //控制流程的跳轉
+  var i = 1 ;
+  while(i<=10){
+    if(i%5 == 0){
+      print("第1個被5整除數字 : $i") ;
+      break ;
+    }
+      print('i: $i') ;
+  i++ ;
+  }
+
 }
 
