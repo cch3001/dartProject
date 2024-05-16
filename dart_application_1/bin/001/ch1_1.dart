@@ -20,16 +20,16 @@ void main() {
 }
 
 void exercise1() {
-  var a = 1;
+  //var a = 1;
   //a="R" ;
   //a=2.0 ;
 
-  var aa = 2.2;
-  aa = 3;
-  Object d = "";
-  d = 3;
-  d = "w";
+  // var aa = 2.2;
+  // aa = 3;
+  // Object d = "";
+  // d = 3;
+  // d = "w";
 
-  dynamic b = 1;
-  b = "X";
+  // dynamic b = 1;
+  // b = "X";
 }
