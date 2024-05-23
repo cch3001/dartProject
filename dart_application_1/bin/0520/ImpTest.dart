@@ -3,9 +3,9 @@ void main(){
 }
 
 abstract class dog{
-  String a ;
+  String? a ;
   void play(){}
-  void 
+  //void 
 
 }
 
