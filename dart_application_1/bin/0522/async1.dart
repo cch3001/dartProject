@@ -47,4 +47,10 @@ class Todo {
   final String what;
 
   const Todo(this.who, this.what);
+  /*
+  
+   task  短時間執行 必且期望由系統內部執行
+   dart 鼓勵使用者用 event 而不是 task
+  
+   */
 }
