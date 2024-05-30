@@ -70,7 +70,8 @@ void main(List<String> args) {
   print(set12);
 
   //建構子
-  var s4 = new Set();
+  //var s4 = new Set();
+  var s4 = Set();
   s4.add(2.35);
   s4.addAll(set12);
   print(s4);
